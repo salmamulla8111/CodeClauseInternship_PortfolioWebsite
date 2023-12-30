@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5f5aa2;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about, .projects {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #5f5aa2;
+    color: white;
+}
+
+.profile-container {
+    display: flex;           
+    align-items: center;    
+    gap: 20px;               
+}
+
+.profile-picture {
+    width: 100px;           
+    height: 100px;          
+    border-radius: 50%;     
+    object-fit: cover;  
+    align-items: left;     
+}
+
+.profile-picture {
+    display: block;
+    margin: 0 auto; 
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.profile-picture:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.project:hover p {
+    opacity: 1; 
+}
+.project p {
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.tabs {
+    overflow: hidden;
+    background-color: #6a5acd;
+    float: left;
+    width: 150px; 
+}
+
+.tablinks {
+    background-color: #8a7fff;
+    float: none; 
+    width: 100%; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 20px; 
+    transition: 0.3s;
+    color: #fff;
+    text-align: left; 
+}
+
+.tablinks:hover {
+    background-color: #a6baff;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f2e9ff;
+    color: #333;
+    margin-left: 150px; 
+}
+
+.tabcontent:first-child {
+    display: block;
+}
